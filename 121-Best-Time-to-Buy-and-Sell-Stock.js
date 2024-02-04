@@ -10,7 +10,7 @@ var maxProfit = function (prices) {
         if (prices[j] - prices[i] > diff && prices[i] < prices[j]) {
             diff = prices[j] - prices[i]
         }
-        if (prices[i] > prices[j]) i++
+        if (prices[i] > prices[j]) i=j
         if (prices[i] <= prices[j]) j++
     }
     return diff
