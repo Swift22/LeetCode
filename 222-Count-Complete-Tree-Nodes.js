@@ -15,7 +15,7 @@ var countNodes = function(root) {
         if(!node) return 0
         let left = move(node.left)
         let right = move(node.right)
-        return 1 + left + right
+        return  left + right + 1
     }
     return move(root)
 };
